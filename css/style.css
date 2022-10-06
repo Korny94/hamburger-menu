@@ -1,0 +1,56 @@
+body {
+    font-family: "open sans", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav,
+#hamburger-menu {
+    display: none;
+}
+
+nav a {
+    display: block;
+    padding: 10px 10px;
+    background: rgb(151, 151, 151);
+    text-decoration: none;
+    color: #fff;
+    border: solid 1px;
+    border-color: rgb(74, 74, 74);
+}
+
+nav {
+    position: absolute;
+    left: 0px;
+}
+
+header {
+    position: relative;
+    background: rgb(151, 151, 151);
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
+.active {
+    background-color: rgb(86, 86, 86);
+}
+
+.fa-solid {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    nav {
+        display: block;
+        position: static;
+    }
+    .fa-solid {
+        display: none;
+    }
+    nav a {
+        display: inline-block;
+        margin: 10px;
+    }
+}
+
